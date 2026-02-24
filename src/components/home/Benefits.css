@@ -1,0 +1,84 @@
+.benefits {
+  width: 100%;
+  padding: 40px 16px;
+}
+
+.benefits h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* List */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: none;
+}
+
+/* Item */
+.benefit-item {
+  position: relative;
+  padding: 16px 20px;
+  border: 1px solid #e6e8ef;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  background: #fff;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+/* 🔥 Content (icon + text) */
+.benefit-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Icon */
+.benefit-icon {
+  color: #2563eb;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+/* 🔥 Hover эффект */
+.benefit-item:hover {
+  transform: translateY(-3px);
+  border-color: #cfd7ff;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  background: #f9faff;
+}
+
+/* 🔥 Hover icon animation */
+.benefit-item:hover .benefit-icon {
+  transform: scale(1.15) rotate(-3deg);
+  color: #4f46e5;
+}
+
+/* 🔥 Click эффект */
+.benefit-item:active {
+  transform: translateY(0px) scale(0.98);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.06);
+}
+
+/* 🔥 Glow overlay */
+.benefit-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.12);
+}
+
+.benefit-item:hover::after {
+  opacity: 1;
+}

@@ -1,0 +1,258 @@
+.pd {
+  width: 100%;
+  padding: 18px 0 26px;
+}
+
+.pd-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.pd-title {
+  margin: 0;
+  color: #111827;
+  font-size: 22px;
+}
+
+.pd-sub {
+  margin-top: 6px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.pd-stats {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pd-stat {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #fff;
+  padding: 10px 12px;
+  min-width: 110px;
+  box-shadow: 0 6px 14px rgba(17, 24, 39, 0.05);
+}
+
+.pd-stat-label {
+  font-size: 12px;
+  color: #6b7280;
+  font-weight: 800;
+}
+
+.pd-stat-val {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #111827;
+}
+
+.pd-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 14px;
+}
+
+@media (max-width: 1000px) {
+  .pd-top {
+    flex-direction: column;
+  }
+
+  .pd-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pd-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 14px;
+  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.06);
+}
+
+.pd-card-full {
+  margin-top: 14px;
+}
+
+.pd-card-title {
+  font-weight: 900;
+  color: #111827;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.pd-empty {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px dashed #e5e7eb;
+  color: #6b7280;
+  background: #fafafa;
+}
+
+.pd-list {
+  display: grid;
+  gap: 10px;
+}
+
+.pd-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #fff;
+  padding: 12px;
+  box-shadow: 0 6px 14px rgba(17, 24, 39, 0.05);
+  transition: transform 0.15s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.pd-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(17, 24, 39, 0.1);
+  border-color: #dbeafe;
+}
+
+.pd-item-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.pd-item-title {
+  font-weight: 900;
+  color: #111827;
+}
+
+.pd-item-meta {
+  margin-top: 4px;
+  color: #6b7280;
+  font-size: 13px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pd-dot {
+  color: #cbd5e1;
+}
+
+.pd-item-body {
+  margin-top: 10px;
+  color: #111827;
+  display: grid;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.pd-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* Buttons */
+.pd-btn {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  cursor: pointer;
+  font-weight: 900;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease,
+    border-color 0.2s ease, color 0.2s ease;
+  box-shadow: 0 6px 14px rgba(17, 24, 39, 0.06);
+}
+
+.pd-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(17, 24, 39, 0.12);
+}
+
+.pd-btn:active {
+  transform: translateY(0px);
+  box-shadow: 0 6px 14px rgba(17, 24, 39, 0.06);
+}
+
+.pd-btn-primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+.pd-btn-primary:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+/* Success stays green but with nicer hover */
+.pd-btn-success {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: #ffffff;
+}
+
+.pd-btn-success:hover {
+  background: #15803d;
+  border-color: #15803d;
+}
+
+/* Secondary: requested hover lightcoral */
+.pd-btn-secondary {
+  background: #ffffff;
+  border-color: #e5e7eb;
+  color: #111827;
+}
+
+.pd-btn-secondary:hover {
+  background: lightcoral;
+  border-color: lightcoral;
+  color: #ffffff;
+}
+
+/* Danger: keep red theme, but still premium */
+.pd-btn-danger {
+  background: #ffffff;
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+.pd-btn-danger:hover {
+  background: lightcoral;
+  border-color: lightcoral;
+  color: #ffffff;
+}
+
+/* Badges */
+.pd-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 900;
+  border: 1px solid transparent;
+}
+
+.pd-badge-warn {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.pd-badge-info {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.pd-badge-ok {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.pd-badge-muted {
+  background: #f3f4f6;
+  color: #374151;
+  border-color: #e5e7eb;
+}

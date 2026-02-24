@@ -1,0 +1,119 @@
+/* Services.css */
+
+.services {
+  width: 100%;
+  padding: 60px 40px;
+  background: #ffffff;
+}
+
+.services h2 {
+  text-align: center;
+  margin: 0 0 28px;
+  color: #111827;
+  font-size: 28px;
+}
+
+.services-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* Card */
+.service-card {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #e6e8ef;
+  border-radius: 14px;
+  background: #ffffff;
+  font-weight: 700;
+  color: #111827;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+/* 🔹 Content layout (icon + text) */
+.service-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* 🔹 Icon */
+.service-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 12px;
+  background: #eef2ff;
+  color: #4f46e5;
+
+  flex-shrink: 0;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* 🔥 Hover card */
+.service-card:hover {
+  transform: translateY(-3px);
+  border-color: #d7dcff;
+  background: #f6f7ff;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+/* 🔥 Icon reacts on hover */
+.service-card:hover .service-icon {
+  background: #4f46e5;
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+/* 🔥 Click feedback */
+.service-card:active {
+  transform: translateY(0px) scale(0.98);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.06);
+}
+
+/* 🔥 Subtle glow */
+.service-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  box-shadow: 0 0 0 1px rgba(215, 220, 255, 0.45) inset;
+}
+
+.service-card:hover::after {
+  opacity: 1;
+}
+
+/* 🔹 Text (optional control) */
+.service-head span {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .services {
+    padding: 40px 16px;
+  }
+}

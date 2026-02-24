@@ -1,0 +1,28 @@
+.cr-page {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.cr-card {
+  width: 100%;
+  max-width: 520px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 18px;
+  background: #ffffff;
+  display: grid;
+  gap: 12px;
+}
+
+.cr-title {
+  margin: 0;
+  color: #111827;
+}
+
+.cr-sub {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.6;
+}

@@ -1,0 +1,132 @@
+.bp {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.bp-card {
+  width: 100%;
+  max-width: 640px;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 22px;
+  background: #ffffff;
+  box-shadow: 0 14px 35px rgba(17, 24, 39, 0.06);
+}
+
+.bp-title {
+  margin: 0;
+  color: #111827;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.bp-sub {
+  margin: 10px 0 0;
+  color: #6b7280;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.bp-form {
+  margin-top: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.bp-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 720px) {
+  .bp-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Scoped inputs (won't break other pages) */
+.bp .field {
+  display: grid;
+  gap: 6px;
+}
+
+.bp .label {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.bp .input {
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.bp .input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+/* Success / Error */
+.bp-success {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #bbf7d0;
+  background: #dcfce7;
+  color: #065f46;
+  font-weight: 700;
+}
+
+.bp .error {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+  font-weight: 700;
+}
+
+/* Scoped buttons for provider page (no conflicts) */
+.bp .btn {
+  padding: 12px 16px;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+.bp .btn-full {
+  width: 100%;
+}
+
+.bp .btn-primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+.bp .btn-primary:hover {
+  background: lightcoral;
+  border-color: lightcoral;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.bp .btn-secondary:hover {
+  background: lightcoral;
+  color: #ffffff;
+  border-color: lightcoral;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+.bp .btn:active {
+  transform: scale(0.97);
+}

@@ -1,0 +1,76 @@
+.ca-page {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.ca-card {
+  width: 100%;
+  max-width: 520px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 18px;
+  background: #ffffff;
+}
+
+.ca-title {
+  margin: 0;
+  color: #111827;
+}
+
+.ca-sub {
+  margin: 10px 0 0;
+  color: #6b7280;
+}
+
+.ca-form {
+  margin-top: 14px;
+  display: grid;
+  gap: 12px;
+}
+
+.ca-divider {
+  margin: 16px 0;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.ca-actions {
+  display: grid;
+  gap: 10px;
+}
+
+/* BUTTONS */
+.ca-page .btn {
+  padding: 12px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.ca-page .btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.ca-page .btn-primary:hover {
+  background: lightcoral;
+  transform: translateY(-2px);
+}
+
+.ca-page .btn-secondary {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+.ca-page .btn-secondary:hover {
+  background: lightcoral;
+  color: white;
+  border-color: lightcoral;
+  transform: translateY(-2px);
+}
+
+.ca-page .btn:active {
+  transform: scale(0.97);
+}

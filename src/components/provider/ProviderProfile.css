@@ -1,0 +1,50 @@
+.pp {
+  margin-bottom: 18px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  background: #fff;
+}
+
+.pp-title {
+  margin: 0 0 10px;
+}
+
+.pp-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.pp-badge.ok {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.pp-badge.warn {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.pp-form {
+  margin-top: 12px;
+  display: grid;
+  gap: 12px;
+}
+
+.pp-saved {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #bbf7d0;
+  background: #dcfce7;
+  color: #065f46;
+  font-weight: 700;
+}
+.pp-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: 8px;
+}

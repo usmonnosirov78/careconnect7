@@ -1,0 +1,226 @@
+.admin {
+  width: 100%;
+  padding: 40px;
+}
+
+.admin h2 {
+  margin: 0 0 14px;
+}
+
+/* Stats */
+.admin-stats {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.stat {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: #fff;
+}
+
+/* Blocks */
+.admin-block {
+  margin-top: 24px;
+}
+
+.admin-block h3 {
+  margin: 0 0 12px;
+}
+
+/* Grid */
+.admin-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* Card */
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 16px;
+  background: #fff;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.card-title {
+  font-weight: 800;
+  color: #111827;
+}
+
+.card-meta {
+  margin-top: 4px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.badge.ok {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge.warn {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: #f9fafb;
+  transform: translateY(-1px);
+}
+
+/* 🔥 FIXED BUTTON GROUP */
+.admin-actions {
+  margin-top: 14px;
+  display: flex;
+  gap: 12px;              /* ✅ spacing between buttons */
+  flex-wrap: wrap;
+}
+
+.admin-actions .btn {
+  margin-top: 0;          /* ✅ убрали конфликт */
+  flex: 1;                /* ✅ красиво растягиваются */
+  min-width: 160px;
+}
+
+/* Danger button */
+.btn-danger {
+  background: #ef4444;
+  border: 1px solid #ef4444;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+  border-color: #dc2626;
+}
+
+/* Lists */
+.admin-list {
+  display: grid;
+  gap: 12px;
+}
+
+.booking-row {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 14px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.booking-row-col {
+  display: grid;
+  gap: 10px;
+}
+
+.row-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.row-title {
+  font-weight: 800;
+  color: #111827;
+}
+
+.row-meta {
+  margin-top: 4px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.row-details {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Select */
+.select {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  min-width: 160px;
+}
+
+/* Status */
+.status {
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.status-pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-accepted {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-rejected {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.status-completed {
+  background: #e0e7ff;
+  color: #3730a3;
+}
+
+/* Empty */
+.empty {
+  padding: 16px;
+  border: 1px dashed #e5e7eb;
+  border-radius: 14px;
+  color: #6b7280;
+}
+
+/* Extra info */
+.admin-provider-info {
+  margin-top: 10px;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+}
